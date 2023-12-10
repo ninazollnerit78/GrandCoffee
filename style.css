@@ -1,0 +1,302 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --black: #000;
+    --white: #fff;
+    --orange: #fd7e14;
+    --gray-dark: #343a40;
+    --dark: #252525;
+
+    --padding: 50px 0;
+
+    --transition: 0.5s;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{
+    font-size: 70px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+h2{
+    font-size: 40px;
+    color: var(--orange);
+}
+
+h3{
+    font-size: 25px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+hr{
+    width: 150px;
+    border: none;
+    height: 2px;
+    background-color: var(--orange);
+    margin: 15px 0;
+}
+
+.container{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.dugme{
+    background-color: var(--dark);
+    color: var(--white);
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 15px 25px;
+    transition: var(--transition);
+    border: 1px solid var(--dark);
+}
+
+.dugme:hover{
+    background-color: var(--orange);
+    border: 1px solid var(--orange);
+}
+
+
+/*********************
+Header
+*********************/
+header{
+    background-color: var(--dark);
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+header .container .logo{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+header .container .logo span{
+    color: var(--orange);
+}
+
+header .container ul{
+    display: flex;
+}
+
+header .container ul a{
+    margin-right: 15px;
+    transition: var(--transition);
+}
+
+header .container ul a:hover{
+    color: var(--orange);
+}
+
+
+/*********************
+Hero
+*********************/
+.hero{
+    background: url(img/banner-bg.png);
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+}
+
+.hero .hero-text{
+    margin-left: 250px;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    width: 30%;
+    padding: var(--padding);
+}
+
+.hero .hero-text h4{
+    font-size: 55px;
+    font-weight: 300;
+    color: var(--dark);
+}
+
+.hero .hero-text button{
+    margin-top: 20px;
+}
+
+
+/*********************
+About
+*********************/
+.about{
+    display: flex;
+    padding: var(--padding);
+    align-items: center;
+}
+
+.about .about-text p{
+    margin-bottom: 30px;
+}
+
+
+/*********************
+Services
+*********************/
+.services{
+    padding: var(--padding);
+    background-color: var(--dark);
+    text-align: center;
+    color: var(--white);
+}
+
+.services hr{
+    margin: 1rem auto 0.8rem;
+}
+
+.services .artikli{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.services .artikli article{
+    background-color: var(--orange);
+    flex: 0 0 32%;
+    padding: 40px;
+}
+
+.services .artikli article p{
+    margin-bottom: 20px;
+}
+
+.services .artikli article button:hover{
+    background-color: var(--white);
+    color: var(--orange);
+    border: 1px solid var(--white);
+}
+
+
+/*********************
+Gallery
+*********************/
+.gallery{
+    padding: var(--padding);
+    text-align: center;
+}
+
+.gallery hr{
+    margin: 1rem auto 0.8rem;
+}
+
+.gallery .slike{
+    margin-top: 40px;
+}
+
+.gallery .slike div{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.2rem;
+}
+
+.gallery .slike div img{
+    width: 365px;
+}
+
+
+/*********************
+Info
+*********************/
+.info{
+    padding: var(--padding);
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.info h2{
+    font-size: 30px;
+}
+
+.info h2:before{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 1px;
+    background-color: var(--orange);
+    margin-left: 300px;
+}
+
+.info h2:after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color: var(--orange);
+    margin-left: 700px
+}
+
+.info p:first-of-type{
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+
+
+/*********************
+Footer
+*********************/
+footer{
+    background-color: var(--dark);
+    padding: var(--padding);
+}
+
+footer .container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+footer .container article{
+    flex: 0 0 31%;
+    color: var(--white);
+}
+
+footer .container article h2{
+    font-size: 20px;
+}
+
+footer .dno{
+    text-align: center;
+    color: var(--white);
+}
+
+footer .dno hr{
+    width: 90%;
+    margin: 15px auto;
+    background-color: var(--white);
+    height: 1px;
+}
